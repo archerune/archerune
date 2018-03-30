@@ -1,0 +1,3 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/INT1/sangil/hana/ptime/query/plan_generator/dml_search/hex/impl/execgen'
