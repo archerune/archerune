@@ -4,11 +4,11 @@ set expandtab
 set shiftwidth=4
 set ci
 set hlsearch
-set tags=./tags,./TAGS,tags,TAGS,/home/sangil/tags
+"set tags=./tags,./TAGS,tags,TAGS,/home/sangil/tags
 set noeb vb t_vb=
 
 syntax on
-colorscheme evening
+"colorscheme evening
 
 function Blame() range
     execute '!git blame -L ' . a:firstline . ',' . a:lastline . ' %'
@@ -26,5 +26,3 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-
