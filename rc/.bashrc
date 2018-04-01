@@ -1,6 +1,8 @@
 #sangil
 alias ls="ls -Gp"
 
+source ~/.bash_git
+
 export LESS=-R
 export GREP_OPTIONS='--color=auto'
 parse_git_branch() {
@@ -8,7 +10,7 @@ parse_git_branch() {
 }
 
 __hostname() {
-  hostname -s | sed -r 's/dhcp-(.*)$/mac/'
+  hostname -s
 }
 #PS1="[\t]\u@\h:\w> "
 export PS1='\[\033[01;33m\]#[\t]$(__hostname)$(__git_ps1 "(%s)"):\[\033[00m\]\w> '
