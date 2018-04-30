@@ -1,5 +1,6 @@
 #sangil
 alias ls="ls -Gp"
+alias g++="g++ -std=c++14"
 
 source ~/.bash_git
 
